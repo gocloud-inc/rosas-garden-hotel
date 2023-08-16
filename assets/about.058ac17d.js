@@ -1,0 +1,1 @@
+import{f as e,u as t,o as a,c as o}from"./entry.a1a3474a.js";const c=e({__name:"about",setup(s){return t({title:"About Us - Rosas Garden Hotel"}),(n,r)=>(a(),o("div",null," I am about "))}});export{c as default};
