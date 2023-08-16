@@ -1,0 +1,161 @@
+:root {
+	// Primary
+	--color-primary: #006625;
+	--color-primary-rgb: 0,102,37;
+	--color-primary-contrast: #ffffff;
+	--color-primary-contrast-rgb: 255,255,255;
+	--color-primary-shade: #005a21;
+	--color-primary-tint: #1a753b;
+
+	// Secondary
+	--color-secondary: #ffdd00;
+	--color-secondary-rgb: 255,221,0;
+	--color-secondary-contrast: #000000;
+	--color-secondary-contrast-rgb: 0,0,0;
+	--color-secondary-shade: #e0c200;
+	--color-secondary-tint: #ffe01a;
+
+	// Dark 
+	--color-dark: #282828;
+	--color-dark-rgb: 40,40,40;
+	--color-dark-contrast: #ffffff;
+	--color-dark-contrast-rgb: 255,255,255;
+	--color-dark-shade: #232323;
+	--color-dark-tint: #3e3e3e;
+
+	// Medium
+	--color-medium: #97a2b5;
+	--color-medium-rgb: 151,162,181;
+	--color-medium-contrast: #000000;
+	--color-medium-contrast-rgb: 0,0,0;
+	--color-medium-shade: #858f9f;
+	--color-medium-tint: #a1abbc;
+
+	// Light
+	--color-light: #ffffff;
+	--color-light-rgb: 255,255,255;
+	--color-light-contrast: #000000;
+	--color-light-contrast-rgb: 0,0,0;
+	--color-light-shade: #e0e0e0;
+	--color-light-tint: #f7f7f7;
+
+	// Card
+	--color-card: #ffffff;
+	--color-card-rgb: 255,255,255;
+	--color-card-contrast: #000000;
+	--color-card-contrast-rgb: 0,0,0;
+	--color-card-shade: #e0e0e0;
+	--color-card-tint: #f7f7f7;
+
+	// Font
+	--font-sans-serif: 'Open Sans', sans-serif;
+	--font-serif: 'Playfair', serif;
+	--font-base: 1rem;
+
+	// Transitions 
+	--button-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+	// Border Radius
+	--default-border-radius: 10px;
+
+	--swiper-pagination-color: var(--color-primary);
+    --swiper-pagination-left: auto;
+    --swiper-pagination-right: 8px;
+    --swiper-pagination-bottom: 20px;
+    --swiper-pagination-top: auto;
+    --swiper-pagination-fraction-color: inherit;
+    --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+    --swiper-pagination-progressbar-size: 4px;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: var(--color-card-tint);
+    --swiper-pagination-bullet-inactive-opacity: 0.7;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+
+	--swiper-navigation-size: 44px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: var(--color-primary);
+}
+
+.swiper-banners {
+	.swiper-button-prev,
+	.swiper-button-next {
+		--swiper-navigation-size: 24px;
+		--swiper-navigation-color: var(--color-dark);
+		background-color: var(--color-card);
+		border-radius: 50%;
+		width: 3.5rem;
+		height: 3.5rem;
+		transition: background-color 0.3s ease;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+		z-index: 1;
+	}
+	
+	/* Hover effect for navigation buttons */
+	.swiper-button-prev:hover,
+	.swiper-button-next:hover {
+		transform:  scale(1.2);
+	}
+
+	.swiper-pagination {
+		--swiper-pagination-color: var(--color-light);
+		z-index: 1;
+	}
+}
+
+.swiper-accomodation {
+	overflow: hidden;
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		--swiper-navigation-size: 24px;
+		--swiper-navigation-color: var(--color-dark);
+		background-color: var(--color-card);
+		border-radius: 50%;
+		width: 3.5rem;
+		height: 3.5rem;
+		transition: background-color 0.3s ease;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+		z-index: 1;
+	}
+	
+	/* Hover effect for navigation buttons */
+	.swiper-button-prev:hover,
+	.swiper-button-next:hover {
+		transform:  scale(1.2);
+	}
+
+	// .swiper-pagination {
+	// 	--swiper-pagination-bottom: -20px;
+	// 	--swiper-pagination-bullet-inactive-color: var(--color-medium);
+	// }
+}
+
+.swiper-accomodation {
+	.swiper-button-prev,
+	.swiper-button-next {
+		visibility: hidden;
+		transition: all 3ms ease-in-out;
+
+	}
+
+	&:hover {
+		.swiper-button-prev,
+		.swiper-button-next {
+			visibility: visible;
+		}
+	}
+}
+
+.swiper-corporate {
+	overflow: visible;
+
+	.swiper-pagination {
+		--swiper-pagination-bottom: -30px;
+		--swiper-pagination-bullet-inactive-color: var(--color-medium);
+	}
+}
